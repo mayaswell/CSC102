@@ -1,9 +1,14 @@
 body {
-    background-image: url("plant\ background\ 1.avif");
+    background: radial-gradient(circle at right, #2f5015, transparent),
+            radial-gradient(circle at left, #2f5015, transparent);
     background-repeat: repeat;
     Background-position: left top;
-    max-width: 500px;
-    margin: auto;
+}
+footer{
+    color:black;
+    position: absolute;
+    top: 95%;
+    left: 10%;
 }
 h1 {
     color: whitesmoke;
@@ -12,9 +17,10 @@ h1 {
 }
 h2 {
     color: magenta;
-    background-color: whitesmoke;
-    max-width: 500px;
-    margin: auto;
+    background-color: rgb(47, 97, 62);
+    position: absolute;
+    top: 93%;
+    right: 10%;
 }
 h6 {
     color: darkolivegreen;
@@ -23,20 +29,22 @@ h6 {
     opacity: 0.2;
 }
 button {
-    background-color: #04AA6D; /* Green */
+    background-color: #3956d6;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: rgb(157, 139, 206);
     text-align: center;
     text-decoration: bold;
-    display: inline-block;
     font-size: 16px;
-    margin: auto;
-    cursor: pointer;
+    cursor:crosshair;
+    padding: 20px;
+    position: absolute;
+    top: 5%;
+    right: 7%;
 }
 a, button:hover {
-	color: black;
 	text-decoration: bold;
+    color: whitesmoke;
+    padding: 21px;
 }
 p {
     color: black;
@@ -48,8 +56,12 @@ ul {
     list-style-type: square;
     background: #dfdb0b;
     padding: 20px;
+    width: 500px;
     max-width: 500px;
     margin: auto;
+    position: absolute;
+    top: 15%;
+    left: 2%;
 }
 ul li {
     background: #6dbd22;
@@ -57,13 +69,28 @@ ul li {
     margin: 5px;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 5px;
 }
 img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    max-width: 500px;
-    margin: auto;
+    padding: 20px;
+    border-style: ridge;
+    border: 10px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
 }
-a {
-    color: whitesmoke;
+nav{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    float: left;
+    padding: 5px;
+    border: 10px;
+    border-color: darkolivegreen;
+    border-style: groove;
+    line-height: 30px;
+    border-top-left-radius: 1em 1em ;
+    border-top-right-radius: 1em 1em ;
+    border-bottom-left-radius: 1em 1em ;
+    border-bottom-right-radius: 1em 1em ;
 }
