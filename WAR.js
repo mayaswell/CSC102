@@ -1,21 +1,21 @@
 function war() 
 {
-    //Player and Vlad get two dice each.
+    //Player and Vladimir get two dice each. These variables generate random numbers from one to six, simulating a dice roll. 
     var player = Math.ceil(Math.random() * 6);
     var player1 = Math.ceil(Math.random() * 6);
     var vlad = Math.ceil(Math.random() * 6);
     var vlad1 = Math.ceil(Math.random() * 6);
 
-    //Have to add up the dice for both to get a winner
+    //These constants are the sums of the player's and Vladimir's dice. These are used to determine the winner of the game later.
     const psum = player + player1;
     const vsum = vlad + vlad1;
 
-    //images for winning and losing
+    //These variables set the images for the win, loss, and draw conditions.
     var win = "youWin.jpg";
     var loss = "youLost.jpg";
     var draw = "DRAW.jpg";
 
-    //images for Vlad's dice
+    //These variables set the images for each dice face for each possible roll (one, two, three, four, five, six) for Vladimir
     var vladOne = "Vlad 1.png";
     var vladTwo = "Vlad 2.png";
     var vladThree = "Vlad 3.png";
@@ -23,125 +23,125 @@ function war()
     var vladFive = "Vlad 5.png";
     var vladSix = "Vlad 6.png";
 
-    //images for Player's dice
+    //These variables do the same thing as the previous batch, only for the player's dice instead. Each dice face is specified here.
     var playerOne = "Player 1.png";
     var playerTwo = "Player 2.png";
     var playerThree = "Player 3.png";
     var playerFour = "Player 4.png";
     var playerFive = "Player 5.png";
     var playerSix = "Player 6.png";
-//we writing conditions now. These if conditions set what images are displayed
+//This next group of statements are what tell the program which image to print for each scenario for Vladimir's first dice
 if (vlad == 1)
 {
     document.getElementById("vladimirImg").src = vladOne;
 }
-if (vlad == 2)
+else if (vlad == 2)
     {
         document.getElementById("vladimirImg").src = vladTwo;
     }
-if (vlad == 3)
+else if (vlad == 3)
     {
         document.getElementById("vladimirImg").src = vladThree;
     }
-if (vlad == 4)
+else if (vlad == 4)
     {
         document.getElementById("vladimirImg").src = vladFour;
     }
-if (vlad == 5)
+else if (vlad == 5)
     {
         document.getElementById("vladimirImg").src = vladFive;
     }
-if (vlad == 6)
+else if (vlad == 6)
     {
         document.getElementById("vladimirImg").src = vladSix;
     }
-//this is for Vlad's second dice
+//This next group of statements are what tell the program which image to print for each scenario for Vladimir's second dice
 if (vlad1 == 1)
 {
     document.getElementById("vladimir1Img").src = vladOne;
 }
-if (vlad1 == 2)
+else if (vlad1 == 2)
     {
         document.getElementById("vladimir1Img").src = vladTwo;
     }
-if (vlad1 == 3)
+else if (vlad1 == 3)
     {
         document.getElementById("vladimir1Img").src = vladThree;
     }
-if (vlad1 == 4)
+else if (vlad1 == 4)
     {
         document.getElementById("vladimir1Img").src = vladFour;
     }
-if (vlad1 == 5)
+else if (vlad1 == 5)
     {
         document.getElementById("vladimir1Img").src = vladFive;
     }
-if (vlad1 == 6)
+else if (vlad1 == 6)
     {
         document.getElementById("vladimir1Img").src = vladSix;
     }
-//Player's first dice
+//This next group of statements are what tell the program which image to print for each scenario for the player's first dice
     if (player == 1)
     {
         document.getElementById("playerImg").src = playerOne;
     }
-    if (player == 2)
+    else if (player == 2)
         {
             document.getElementById("playerImg").src = playerTwo;
         }
-    if (player == 3)
+    else if (player == 3)
         {
             document.getElementById("playerImg").src = playerThree;
         }
-    if (player == 4)
+    else if (player == 4)
         {
             document.getElementById("playerImg").src = playerFour;
         }
-    if (player == 5)
+    else if (player == 5)
         {
             document.getElementById("playerImg").src = playerFive;
         }
-    if (player == 6)
+    else if (player == 6)
         {
             document.getElementById("playerImg").src = playerSix;
         }
-//Player's second dice
+//This next group of statements are what tell the program which image to print for each scenario for the player's second dice
     if (player1 == 1)
     {
         document.getElementById("player1Img").src = playerOne;
     }
-    if (player1 == 2)
+    else if (player1 == 2)
         {
             document.getElementById("player1Img").src = playerTwo;
         }
-    if (player1 == 3)
+    else if (player1 == 3)
         {
             document.getElementById("player1Img").src = playerThree;
         }
-    if (player1 == 4)
+    else if (player1 == 4)
         {
             document.getElementById("player1Img").src = playerFour;
         }
-    if (player1 == 5)
+    else if (player1 == 5)
         {
             document.getElementById("player1Img").src = playerFive;
         }
-    if (player1 == 6)
+    else if (player1 == 6)
         {
             document.getElementById("player1Img").src = playerSix;
         }
-//sometimes no one wins, so put in a draw statement
+//This statement is what prints if the sum of the player's dice are equal to the sum of Vladimir's dice, i.e. no one wins the game.
 if (psum == vsum)
 {
     document.getElementById("finalResult").src = draw;
 }
-//If you win
-if (psum > vsum)
+//This statement is what prints if the sum of the player's dice are greater than the sum of Vladimir's dice, i.e. winning the game.
+else if (psum > vsum)
 {
     document.getElementById("finalResult").src = win;
 }
-//Better luck next time
-if (psum < vsum)
+//This statement is what prints if the sum of the player's dice are less than the sum of Vladimir's dice, i.e. losing the game.
+else if (psum < vsum)
 {
     document.getElementById("finalResult").src = loss;
 }

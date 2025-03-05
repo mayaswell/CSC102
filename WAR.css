@@ -1,0 +1,84 @@
+body {
+    background: radial-gradient(circle at top, #850606, transparent), radial-gradient(circle at bottom, #740208, transparent);
+    background-size:auto;
+    background-repeat:round;
+}
+img {
+    border-style: groove;
+    border-width: 7px;
+    border-color: black;
+}
+h1 {
+    border-style: groove;
+    border-width: 7px;
+    border-color: black;
+    position: absolute;
+    right: 41%;
+}
+h2 {
+    border-style: groove;
+    border-width: 7px;
+    border-color: black;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.player {
+    position:absolute;
+    top: 10%;
+    left: 30%;
+}
+.playImg {
+    position:absolute;
+    top: 20%;
+    left: 30%;
+}
+.playImg1 {
+    position:absolute;
+    top: 30%;
+    left: 30%;
+}
+.vlad {
+    position:absolute;
+    top: 10%;
+    right: 35%;
+}
+.vladImg {
+    position:absolute;
+    top: 20%;
+    right: 30%;
+}
+.vladImg1 {
+    position:absolute;
+    top: 30%;
+    right: 30%;
+}
+.resultButton {
+    position: absolute;
+    bottom: 50%;
+    right: 48%;
+}
+.resultImg {
+    position: absolute;
+    bottom: 30%;
+    right: 47%;
+}
+button {
+    background-color: #9cb81e;
+    border: none;
+    color: rgb(109, 248, 16);
+    text-align: center;
+    text-decoration: bold;
+    font-size: 16px;
+    cursor:crosshair;
+    padding: 20px;
+    border-top-left-radius: 1em 1em ;
+    border-top-right-radius: 1em 1em ;
+    border-bottom-left-radius: 1em 1em ;
+    border-bottom-right-radius: 1em 1em ;
+}
+button:hover {
+	text-decoration: bold;
+    color: whitesmoke;
+    padding: 21px;
+}
