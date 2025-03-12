@@ -1,0 +1,9 @@
+body {
+    position:absolute;
+    left: 42%;
+    top: 35%;
+    background-color: crimson;
+}
+p {
+    background-color: aquamarine;
+}
