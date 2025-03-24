@@ -134,15 +134,33 @@ else if (vlad1 == 6)
 if (psum == vsum)
 {
     document.getElementById("finalResult").src = draw;
+    //I added some war sounds for a draw
+    mySound = new sound("DRAW A.wav")
+    mySound.play();
 }
 //This statement is what prints if the sum of the player's dice are greater than the sum of Vladimir's dice, i.e. winning the game.
 else if (psum > vsum)
 {
     document.getElementById("finalResult").src = win;
+//I added some war sounds for a win
+    mySound = new sound("youWinA.wav")
+    mySound.play();
 }
 //This statement is what prints if the sum of the player's dice are less than the sum of Vladimir's dice, i.e. losing the game.
 else if (psum < vsum)
 {
     document.getElementById("finalResult").src = loss;
+//I added some war sounds for a loss
+    mySound = new sound("youLostA.wav")
+    mySound.play();
 }
+}
+//This function is the sound function that we will be using for a while now, apparently
+function sound(src)
+{
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.play = function() {
+        this.sound.play();
+    }
 }

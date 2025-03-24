@@ -3,10 +3,14 @@ body {
     background-size:auto;
     background-repeat:round;
 }
+.resultImg {
+    background-image: url(backgroundNew.jpg);
+}
 img {
     border-style: groove;
     border-width: 7px;
     border-color: black;
+    background-image: url(backgroundNew.jpg);
 }
 h1 {
     border-style: groove;
@@ -14,6 +18,7 @@ h1 {
     border-color: black;
     position: absolute;
     right: 41%;
+    background-image: url(backgroundNew.jpg);
 }
 h2 {
     border-style: groove;
@@ -22,6 +27,7 @@ h2 {
     position: absolute;
     top: 15%;
     left: 30%;
+    background-image: url(backgroundNew.jpg);
 }
 .player {
     position:absolute;
