@@ -1,0 +1,70 @@
+body {
+    background: url(Background\ Blank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+button:hover {
+    background-color: yellowgreen;
+    cursor:grab;
+}
+img:hover {
+    cursor:not-allowed;
+}
+.hidden {
+position: absolute;
+top: 92%;
+left: 95%;
+}
+button {
+    padding: 5px;
+    text-align: center;
+    text-decoration: bold;
+    font-size: 14px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: forestgreen;
+    background-color: darkgreen;
+    border-radius: 40px;
+}
+.buttonNotMove {
+    position:absolute;
+    left: 2%;
+    top: 65%;
+}
+.buttonMove {
+    position:absolute;
+    left: 2%;
+    top: 37%;
+}
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -220px;
+    width: 450px;
+    height: 100px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: antiquewhite;
+    text-shadow: 2px 2px greenyellow;
+}
+h2 {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 30px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: antiquewhite;
+}
+.cornerLeaves {
+    position: absolute;
+    top: 33%;
+    left: 78%;
+}
